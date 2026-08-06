@@ -25,6 +25,16 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:title", content: "אליפות היחידה — משחקי היום" },
       { property: "og:description", content: "תוצאות חיות ועדכונים מכל שלושת הענפים." },
+      { property: "og:image", content: "/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "אליפות היחידה - לוגו" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://tourament-hub.roeepaz.com" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "אליפות היחידה — משחקי היום" },
+      { name: "twitter:description", content: "תוצאות חיות ועדכונים מכל שלושת הענפים." },
+      { name: "twitter:image", content: "/og-image.png" },
     ],
   }),
   errorComponent: ({ error }) => <p role="alert">שגיאה בטעינת הנתונים: {error.message}</p>,
@@ -66,38 +76,11 @@ function Home() {
 
   return (
     <div className="flex flex-col gap-8">
-      <section className="hero-panel px-5 py-7">
-        <h1 className="text-3xl font-black tracking-tight sm:text-4xl">אליפות היחידה</h1>
-        <p className="mt-2 max-w-xl text-muted-foreground">
-          כדורגל, כדורסל ומחניים — שש קבוצות, טורניר אחד. עקבו אחרי התוצאות בזמן אמת ונחשו את
-          המשחקים כדי לטפס בטבלת המנחשים.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Button asChild>
-            <Link to="/schedule">
-              <CalendarDays className="h-4 w-4" />
-              לוח המשחקים
-            </Link>
-          </Button>
-          {!name && (
-            <Button variant="secondary" onClick={() => setNameOpen(true)}>
-              הזן שם והתחל לנחש
-            </Button>
-          )}
-          <Button asChild variant="outline">
-            <Link to="/supporters">
-              <Users className="h-4 w-4" />
-              אלופי העידוד
-            </Link>
-          </Button>
-        </div>
-      </section>
-
       {topSupporters.length > 0 && (
         <section className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
             <Trophy className="h-5 w-5 text-gold" />
-            <h2 className="text-xl font-black">אלופי העידוד — הטופ 3</h2>
+            <h2 className="text-xl font-black">אלופי העידוד</h2>
           </div>
           <div className="surface-card overflow-x-auto">
             <table className="w-full min-w-md text-right text-sm">
@@ -134,7 +117,7 @@ function Home() {
         <section className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
             <Goal className="h-5 w-5 text-live" />
-            <h2 className="text-xl font-black">מלך השערים — הטופ 3</h2>
+            <h2 className="text-xl font-black">מלך השערים</h2>
           </div>
           <div className="surface-card overflow-x-auto">
             <table className="w-full min-w-md text-right text-sm">

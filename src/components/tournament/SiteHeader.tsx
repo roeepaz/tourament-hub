@@ -8,7 +8,6 @@ import { useUserName } from "@/hooks/use-user-name";
 const NAV = [
   { to: "/", label: "בית", icon: Home },
   { to: "/schedule", label: "לוח משחקים", icon: CalendarDays },
-  { to: "/standings", label: "טבלאות", icon: ListOrdered },
   { to: "/predictions", label: "הניחושים שלי", icon: Ticket },
   { to: "/leaderboard", label: "טבלת מנחשים", icon: Trophy },
   { to: "/supporters", label: "אלופי העידוד", icon: Users },
@@ -23,9 +22,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
       <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3">
         <Link to="/" className="flex min-w-0 items-center gap-2">
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
-            <Trophy className="h-5 w-5" />
-          </span>
+          <img src="/logo.png" alt="לוגו אליפות היחידה" className="h-9 w-9 shrink-0 rounded-xl object-cover" />
           <span className="truncate text-lg font-black tracking-tight">אליפות היחידה</span>
         </Link>
         <div className="flex shrink-0 items-center gap-2">
