@@ -1,0 +1,36 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#001f3f" stroke-width="8"/>
+  
+  <!-- Orange/accent circle -->
+  <circle cx="200" cy="200" r="155" fill="none" stroke="#FF8C00" stroke-width="6"/>
+  
+  <!-- Wings left -->
+  <path d="M 140 200 L 80 180 L 90 190 L 140 210" fill="none" stroke="#001f3f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 130 195 L 70 160 L 85 175 L 125 200" fill="none" stroke="#001f3f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 125 205 L 60 190 L 75 200 L 120 210" fill="none" stroke="#001f3f" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Wings right -->
+  <path d="M 260 200 L 320 180 L 310 190 L 260 210" fill="none" stroke="#001f3f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 270 195 L 330 160 L 315 175 L 275 200" fill="none" stroke="#001f3f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 275 205 L 340 190 L 325 200 L 280 210" fill="none" stroke="#001f3f" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Mountains/geometric shapes inside - upper half -->
+  <polygon points="200,100 240,160 160,160" fill="none" stroke="#001f3f" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="240,160 260,145 280,165" fill="none" stroke="#001f3f" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Star-like elements -->
+  <circle cx="170" cy="130" r="3" fill="#001f3f"/>
+  <circle cx="190" cy="120" r="3" fill="#001f3f"/>
+  <circle cx="210" cy="125" r="3" fill="#001f3f"/>
+  <circle cx="230" cy="135" r="3" fill="#001f3f"/>
+  
+  <!-- Fish/movement elements -->
+  <path d="M 160 145 L 175 150 L 165 155" fill="none" stroke="#001f3f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 215 140 L 230 145 L 220 150" fill="none" stroke="#001f3f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Water waves at bottom -->
+  <path d="M 120 200 Q 140 195 160 200 T 200 200 T 240 200 T 280 200" fill="none" stroke="#001f3f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 130 220 Q 150 215 170 220 T 210 220 T 250 220 T 290 220" fill="none" stroke="#001f3f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 140 240 Q 160 235 180 240 T 220 240 T 260 240" fill="none" stroke="#001f3f" stroke-width="3.5" stroke-linecap="round"/>
+</svg>
