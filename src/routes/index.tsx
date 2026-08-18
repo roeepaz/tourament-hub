@@ -18,21 +18,21 @@ export const Route = createFileRoute("/")({
   loader: ({ context }) => preloadTournament(context.queryClient),
   head: () => ({
     meta: [
-      { title: "אליפות היחידה — משחקי היום ותוצאות חיות" },
+      { title: "אליפות החוסן 2026 — משחקי היום ותוצאות חיות" },
       {
         name: "description",
         content: "כל משחקי היום בכדורגל, כדורסל ומחניים, כולל תוצאות חיות ועדכונים מהמגרש.",
       },
-      { property: "og:title", content: "אליפות היחידה — משחקי היום" },
+      { property: "og:title", content: "אליפות החוסן 2026 — משחקי היום" },
       { property: "og:description", content: "תוצאות חיות ועדכונים מכל שלושת הענפים." },
       { property: "og:image", content: "/og-image.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "אליפות היחידה - לוגו" },
+      { property: "og:image:alt", content: "אליפות החוסן - לוגו" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://tourament-hub.roeepaz.com" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "אליפות היחידה — משחקי היום" },
+      { name: "twitter:title", content: "אליפות החוסן 2026 — משחקי היום" },
       { name: "twitter:description", content: "תוצאות חיות ועדכונים מכל שלושת הענפים." },
       { name: "twitter:image", content: "/og-image.png" },
     ],
@@ -76,6 +76,14 @@ function Home() {
 
   return (
     <div className="flex flex-col gap-8">
+      <div className="flex flex-col items-center gap-4 py-8">
+        <img src="/logo.svg" alt="לוגו אליפות החוסן" className="h-32 w-32" />
+        <div className="text-center">
+          <h1 className="text-4xl font-black text-primary">אליפות החוסן 2026</h1>
+          <p className="mt-2 text-lg text-muted-foreground">טורניר רב-ענפי</p>
+        </div>
+      </div>
+
       {topSupporters.length > 0 && (
         <section className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
