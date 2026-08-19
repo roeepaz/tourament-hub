@@ -77,7 +77,7 @@ function Home() {
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col items-center gap-4 py-8">
-        <img src="/logo.svg" alt="לוגו אליפות החוסן" className="h-32 w-32" />
+        <img src="/logomahan.jpg" alt="לוגו אליפות החוסן" className="h-32 w-32" />
         <div className="text-center">
           <h1 className="text-4xl font-black text-primary">אליפות החוסן 2026</h1>
           <p className="mt-2 text-lg text-muted-foreground">טורניר רב-ענפי</p>
