@@ -76,8 +76,17 @@ function Home() {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex flex-col items-center gap-4 py-8">
-        <img src="/logomahan.jpg" alt="לוגו אליפות החוסן" className="h-32 w-32" />
+      <div className="hero-panel relative flex flex-col items-center gap-5 overflow-hidden px-6 py-10">
+        {/* Decorative glow behind the logo */}
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-48 w-48 rounded-full bg-primary/20 blur-3xl" />
+        <div className="relative">
+          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/40 to-accent/30 blur-sm" />
+          <img
+            src="/logomahan.jpg"
+            alt="לוגו אליפות החוסן"
+            className="relative h-36 w-auto rounded-2xl shadow-lg ring-1 ring-white/10"
+          />
+        </div>
         <div className="text-center">
           <h1 className="text-4xl font-black text-primary">אליפות החוסן 2026</h1>
           <p className="mt-2 text-lg text-muted-foreground">טורניר אלופת מה"ן</p>
