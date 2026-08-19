@@ -80,7 +80,7 @@ function Home() {
         <img src="/logomahan.jpg" alt="לוגו אליפות החוסן" className="h-32 w-32" />
         <div className="text-center">
           <h1 className="text-4xl font-black text-primary">אליפות החוסן 2026</h1>
-          <p className="mt-2 text-lg text-muted-foreground">טורניר רב-ענפי</p>
+          <p className="mt-2 text-lg text-muted-foreground">טורניר אלופת מה"ן</p>
         </div>
       </div>
 
